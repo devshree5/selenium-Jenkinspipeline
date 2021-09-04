@@ -1,4 +1,4 @@
-node {
+node ('Windows') {
 	stage ('SCM checkout'){
 		git "https://github.com/puneetbhatia77/selenium-Jenkinspipeline"
 		}

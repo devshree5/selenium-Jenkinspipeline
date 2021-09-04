@@ -1,10 +1,10 @@
 node ('Windows') {
 	stage ('SCM checkout'){
-		git "https://github.com/puneetbhatia77/selenium-Jenkinspipeline"
+		git "https://github.com/devshree5/selenium-Jenkinspipeline.git"
 		}
 	stage ('Build'){
     	dir("comtest") {
-	   sh "mvn clean install"
+	   sh "mvn install"
        }
 	}
     stage ('test') {
